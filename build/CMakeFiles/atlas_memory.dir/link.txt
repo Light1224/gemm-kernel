@@ -1,0 +1,2 @@
+/usr/bin/ar qc libatlas_memory.a CMakeFiles/atlas_memory.dir/atlas_memory/src/layout.cpp.o CMakeFiles/atlas_memory.dir/atlas_memory/src/workspace.cpp.o CMakeFiles/atlas_memory.dir/atlas_memory/src/packing_a.cpp.o CMakeFiles/atlas_memory.dir/atlas_memory/src/packing_b.cpp.o
+/usr/bin/ranlib libatlas_memory.a

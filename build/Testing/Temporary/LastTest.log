@@ -1,0 +1,182 @@
+Start testing: Feb 07 13:18 IST
+----------------------------------------------------------
+1/8 Testing: test_layout_and_alignment
+1/8 Test: test_layout_and_alignment
+Command: "/Users/shamit/Documents/code/hpc/atlas/build/test_layout_and_alignment"
+Directory: /Users/shamit/Documents/code/hpc/atlas/build
+"test_layout_and_alignment" start time: Feb 07 13:18 IST
+Output:
+----------------------------------------------------------
+
+=== TEST: Layout & Alignment ===
+Total capacity: 82176
+A capacity: 32768
+B capacity: 49152
+Accum capacity: 256
+Layout & Alignment PASSED
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_layout_and_alignment" end time: Feb 07 13:18 IST
+"test_layout_and_alignment" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/8 Testing: test_layout_math
+2/8 Test: test_layout_math
+Command: "/Users/shamit/Documents/code/hpc/atlas/build/test_layout_math"
+Directory: /Users/shamit/Documents/code/hpc/atlas/build
+"test_layout_math" start time: Feb 07 13:18 IST
+Output:
+----------------------------------------------------------
+
+=== TEST: Layout Math ===
+Layout math PASSED
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_layout_math" end time: Feb 07 13:18 IST
+"test_layout_math" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/8 Testing: test_reset_behavior
+3/8 Test: test_reset_behavior
+Command: "/Users/shamit/Documents/code/hpc/atlas/build/test_reset_behavior"
+Directory: /Users/shamit/Documents/code/hpc/atlas/build
+"test_reset_behavior" start time: Feb 07 13:18 IST
+Output:
+----------------------------------------------------------
+
+=== TEST: Reset Behavior ===
+Reset PASSED
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_reset_behavior" end time: Feb 07 13:18 IST
+"test_reset_behavior" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/8 Testing: test_packing_correctness
+4/8 Test: test_packing_correctness
+Command: "/Users/shamit/Documents/code/hpc/atlas/build/test_packing_correctness"
+Directory: /Users/shamit/Documents/code/hpc/atlas/build
+"test_packing_correctness" start time: Feb 07 13:18 IST
+Output:
+----------------------------------------------------------
+
+=== TEST: Packing Correctness ===
+Packing PASSED
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_packing_correctness" end time: Feb 07 13:18 IST
+"test_packing_correctness" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/8 Testing: test_multiple_block_configs
+5/8 Test: test_multiple_block_configs
+Command: "/Users/shamit/Documents/code/hpc/atlas/build/test_multiple_block_configs"
+Directory: /Users/shamit/Documents/code/hpc/atlas/build
+"test_multiple_block_configs" start time: Feb 07 13:18 IST
+Output:
+----------------------------------------------------------
+
+=== TEST: Multiple Block Configurations ===
+Config BM=64 BN=64 BK=64 OK
+Config BM=128 BN=128 BK=64 OK
+Config BM=256 BN=128 BK=128 OK
+Config BM=192 BN=256 BK=128 OK
+Multiple configs PASSED
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_multiple_block_configs" end time: Feb 07 13:18 IST
+"test_multiple_block_configs" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/8 Testing: test_stress_allocation
+6/8 Test: test_stress_allocation
+Command: "/Users/shamit/Documents/code/hpc/atlas/build/test_stress_allocation"
+Directory: /Users/shamit/Documents/code/hpc/atlas/build
+"test_stress_allocation" start time: Feb 07 13:18 IST
+Output:
+----------------------------------------------------------
+
+=== TEST: Stress Allocation ===
+Iteration 0
+Iteration 250
+Iteration 500
+Iteration 750
+Iteration 1000
+Iteration 1250
+Iteration 1500
+Iteration 1750
+Stress PASSED
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_stress_allocation" end time: Feb 07 13:18 IST
+"test_stress_allocation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/8 Testing: test_basic_blocked_gemm
+7/8 Test: test_basic_blocked_gemm
+Command: "/Users/shamit/Documents/code/hpc/atlas/build/test_basic_blocked_gemm"
+Directory: /Users/shamit/Documents/code/hpc/atlas/build
+"test_basic_blocked_gemm" start time: Feb 07 13:18 IST
+Output:
+----------------------------------------------------------
+
+=== TEST: Basic Blocked GEMM Using Atlas Memory ===
+Max error: 0
+Basic Blocked GEMM PASSED
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_basic_blocked_gemm" end time: Feb 07 13:18 IST
+"test_basic_blocked_gemm" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/8 Testing: benchmark_naive_vs_packed
+8/8 Test: benchmark_naive_vs_packed
+Command: "/Users/shamit/Documents/code/hpc/atlas/build/benchmark_naive_vs_packed"
+Directory: /Users/shamit/Documents/code/hpc/atlas/build
+"benchmark_naive_vs_packed" start time: Feb 07 13:18 IST
+Output:
+----------------------------------------------------------
+
+=== PACKING vs NAIVE SCALING TEST ===
+
+   Size        |  Naive GF  | Packed GF | Speed  | Check
+--------------------------------------------------------------
+     8x     8x     8 |     2.24 |     2.24 |   1.00x | OK
+    16x    16x    16 |     4.18 |     4.01 |   0.96x | OK
+    32x    32x    32 |     3.97 |     3.84 |   0.97x | OK
+    64x    64x    64 |     2.93 |     3.84 |   1.31x | OK
+    96x    96x    96 |     2.40 |     4.05 |   1.69x | OK
+   128x   128x   128 |     2.45 |     3.72 |   1.51x | OK
+   192x   192x   192 |     2.48 |     4.78 |   1.93x | OK
+   256x   256x   256 |     1.77 |     4.91 |   2.77x | OK
+   320x   320x   320 |     2.21 |     4.93 |   2.23x | OK
+   400x   400x   400 |     2.11 |     4.97 |   2.36x | OK
+   512x   512x   512 |     1.78 |     4.82 |   2.71x | OK
+   640x   640x   640 |     1.75 |     4.78 |   2.73x | OK
+  1024x  1024x  1024 |     1.71 |     4.74 |   2.76x | OK
+
+(Observe when speedup crosses 1.0x)
+
+<end of output>
+Test time =   7.57 sec
+----------------------------------------------------------
+Test Passed.
+"benchmark_naive_vs_packed" end time: Feb 07 13:18 IST
+"benchmark_naive_vs_packed" time elapsed: 00:00:07
+----------------------------------------------------------
+
+End testing: Feb 07 13:18 IST

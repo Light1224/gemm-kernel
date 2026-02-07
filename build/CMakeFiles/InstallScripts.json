@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/shamit/Documents/code/hpc/atlas/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

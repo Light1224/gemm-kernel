@@ -1,0 +1,9 @@
+test_layout_and_alignment 2 0.00172575
+test_layout_math 2 0.00137754
+test_reset_behavior 2 0.00110673
+test_packing_correctness 2 0.00121885
+test_multiple_block_configs 2 0.00108162
+test_stress_allocation 2 0.00177606
+test_basic_blocked_gemm 2 0.00115017
+benchmark_naive_vs_packed 2 3.78582
+---

@@ -1,0 +1,12 @@
+/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles/atlas_memory.dir
+/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles/test_layout_and_alignment.dir
+/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles/test_layout_math.dir
+/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles/test_reset_behavior.dir
+/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles/test_packing_correctness.dir
+/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles/test_multiple_block_configs.dir
+/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles/test_stress_allocation.dir
+/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles/test_basic_blocked_gemm.dir
+/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles/benchmark_naive_vs_packed.dir
+/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles/test.dir
+/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles/edit_cache.dir
+/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles/rebuild_cache.dir
