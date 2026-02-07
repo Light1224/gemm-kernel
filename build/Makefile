@@ -140,108 +140,82 @@ atlas_memory/fast:
 .PHONY : atlas_memory/fast
 
 #=============================================================================
-# Target rules for targets named test_layout_and_alignment
+# Target rules for targets named gemm_kernels
 
 # Build rule for target.
-test_layout_and_alignment: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_layout_and_alignment
-.PHONY : test_layout_and_alignment
+gemm_kernels: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gemm_kernels
+.PHONY : gemm_kernels
 
 # fast build rule for target.
-test_layout_and_alignment/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_and_alignment.dir/build.make CMakeFiles/test_layout_and_alignment.dir/build
-.PHONY : test_layout_and_alignment/fast
+gemm_kernels/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/build
+.PHONY : gemm_kernels/fast
 
 #=============================================================================
-# Target rules for targets named test_layout_math
+# Target rules for targets named benchmark_gemm_v0
 
 # Build rule for target.
-test_layout_math: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_layout_math
-.PHONY : test_layout_math
+benchmark_gemm_v0: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark_gemm_v0
+.PHONY : benchmark_gemm_v0
 
 # fast build rule for target.
-test_layout_math/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_math.dir/build.make CMakeFiles/test_layout_math.dir/build
-.PHONY : test_layout_math/fast
+benchmark_gemm_v0/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v0.dir/build.make CMakeFiles/benchmark_gemm_v0.dir/build
+.PHONY : benchmark_gemm_v0/fast
 
 #=============================================================================
-# Target rules for targets named test_reset_behavior
+# Target rules for targets named benchmark_gemm_v1
 
 # Build rule for target.
-test_reset_behavior: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_reset_behavior
-.PHONY : test_reset_behavior
+benchmark_gemm_v1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark_gemm_v1
+.PHONY : benchmark_gemm_v1
 
 # fast build rule for target.
-test_reset_behavior/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_reset_behavior.dir/build.make CMakeFiles/test_reset_behavior.dir/build
-.PHONY : test_reset_behavior/fast
+benchmark_gemm_v1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v1.dir/build.make CMakeFiles/benchmark_gemm_v1.dir/build
+.PHONY : benchmark_gemm_v1/fast
 
 #=============================================================================
-# Target rules for targets named test_packing_correctness
+# Target rules for targets named benchmark_gemm_v2
 
 # Build rule for target.
-test_packing_correctness: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_packing_correctness
-.PHONY : test_packing_correctness
+benchmark_gemm_v2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark_gemm_v2
+.PHONY : benchmark_gemm_v2
 
 # fast build rule for target.
-test_packing_correctness/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_packing_correctness.dir/build.make CMakeFiles/test_packing_correctness.dir/build
-.PHONY : test_packing_correctness/fast
+benchmark_gemm_v2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v2.dir/build.make CMakeFiles/benchmark_gemm_v2.dir/build
+.PHONY : benchmark_gemm_v2/fast
 
 #=============================================================================
-# Target rules for targets named test_multiple_block_configs
+# Target rules for targets named benchmark_gemm_v3
 
 # Build rule for target.
-test_multiple_block_configs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_multiple_block_configs
-.PHONY : test_multiple_block_configs
+benchmark_gemm_v3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark_gemm_v3
+.PHONY : benchmark_gemm_v3
 
 # fast build rule for target.
-test_multiple_block_configs/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_multiple_block_configs.dir/build.make CMakeFiles/test_multiple_block_configs.dir/build
-.PHONY : test_multiple_block_configs/fast
+benchmark_gemm_v3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v3.dir/build.make CMakeFiles/benchmark_gemm_v3.dir/build
+.PHONY : benchmark_gemm_v3/fast
 
 #=============================================================================
-# Target rules for targets named test_stress_allocation
+# Target rules for targets named test_gemm_correctness
 
 # Build rule for target.
-test_stress_allocation: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_stress_allocation
-.PHONY : test_stress_allocation
+test_gemm_correctness: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_gemm_correctness
+.PHONY : test_gemm_correctness
 
 # fast build rule for target.
-test_stress_allocation/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stress_allocation.dir/build.make CMakeFiles/test_stress_allocation.dir/build
-.PHONY : test_stress_allocation/fast
-
-#=============================================================================
-# Target rules for targets named test_basic_blocked_gemm
-
-# Build rule for target.
-test_basic_blocked_gemm: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_basic_blocked_gemm
-.PHONY : test_basic_blocked_gemm
-
-# fast build rule for target.
-test_basic_blocked_gemm/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_basic_blocked_gemm.dir/build.make CMakeFiles/test_basic_blocked_gemm.dir/build
-.PHONY : test_basic_blocked_gemm/fast
-
-#=============================================================================
-# Target rules for targets named benchmark_naive_vs_packed
-
-# Build rule for target.
-benchmark_naive_vs_packed: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark_naive_vs_packed
-.PHONY : benchmark_naive_vs_packed
-
-# fast build rule for target.
-benchmark_naive_vs_packed/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_naive_vs_packed.dir/build.make CMakeFiles/benchmark_naive_vs_packed.dir/build
-.PHONY : benchmark_naive_vs_packed/fast
+test_gemm_correctness/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gemm_correctness.dir/build.make CMakeFiles/test_gemm_correctness.dir/build
+.PHONY : test_gemm_correctness/fast
 
 atlas_memory/src/layout.o: atlas_memory/src/layout.cpp.o
 .PHONY : atlas_memory/src/layout.o
@@ -339,197 +313,221 @@ atlas_memory/src/workspace.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atlas_memory.dir/build.make CMakeFiles/atlas_memory.dir/atlas_memory/src/workspace.cpp.s
 .PHONY : atlas_memory/src/workspace.cpp.s
 
-tests/benchmark_naive_vs_packed.o: tests/benchmark_naive_vs_packed.cpp.o
-.PHONY : tests/benchmark_naive_vs_packed.o
+gemm/v0_naive.o: gemm/v0_naive.cpp.o
+.PHONY : gemm/v0_naive.o
 
 # target to build an object file
-tests/benchmark_naive_vs_packed.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_naive_vs_packed.dir/build.make CMakeFiles/benchmark_naive_vs_packed.dir/tests/benchmark_naive_vs_packed.cpp.o
-.PHONY : tests/benchmark_naive_vs_packed.cpp.o
+gemm/v0_naive.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/gemm/v0_naive.cpp.o
+.PHONY : gemm/v0_naive.cpp.o
 
-tests/benchmark_naive_vs_packed.i: tests/benchmark_naive_vs_packed.cpp.i
-.PHONY : tests/benchmark_naive_vs_packed.i
+gemm/v0_naive.i: gemm/v0_naive.cpp.i
+.PHONY : gemm/v0_naive.i
 
 # target to preprocess a source file
-tests/benchmark_naive_vs_packed.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_naive_vs_packed.dir/build.make CMakeFiles/benchmark_naive_vs_packed.dir/tests/benchmark_naive_vs_packed.cpp.i
-.PHONY : tests/benchmark_naive_vs_packed.cpp.i
+gemm/v0_naive.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/gemm/v0_naive.cpp.i
+.PHONY : gemm/v0_naive.cpp.i
 
-tests/benchmark_naive_vs_packed.s: tests/benchmark_naive_vs_packed.cpp.s
-.PHONY : tests/benchmark_naive_vs_packed.s
+gemm/v0_naive.s: gemm/v0_naive.cpp.s
+.PHONY : gemm/v0_naive.s
 
 # target to generate assembly for a file
-tests/benchmark_naive_vs_packed.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_naive_vs_packed.dir/build.make CMakeFiles/benchmark_naive_vs_packed.dir/tests/benchmark_naive_vs_packed.cpp.s
-.PHONY : tests/benchmark_naive_vs_packed.cpp.s
+gemm/v0_naive.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/gemm/v0_naive.cpp.s
+.PHONY : gemm/v0_naive.cpp.s
 
-tests/test_basic_blocked_gemm.o: tests/test_basic_blocked_gemm.cpp.o
-.PHONY : tests/test_basic_blocked_gemm.o
+gemm/v1_loop_reorder.o: gemm/v1_loop_reorder.cpp.o
+.PHONY : gemm/v1_loop_reorder.o
 
 # target to build an object file
-tests/test_basic_blocked_gemm.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_basic_blocked_gemm.dir/build.make CMakeFiles/test_basic_blocked_gemm.dir/tests/test_basic_blocked_gemm.cpp.o
-.PHONY : tests/test_basic_blocked_gemm.cpp.o
+gemm/v1_loop_reorder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/gemm/v1_loop_reorder.cpp.o
+.PHONY : gemm/v1_loop_reorder.cpp.o
 
-tests/test_basic_blocked_gemm.i: tests/test_basic_blocked_gemm.cpp.i
-.PHONY : tests/test_basic_blocked_gemm.i
+gemm/v1_loop_reorder.i: gemm/v1_loop_reorder.cpp.i
+.PHONY : gemm/v1_loop_reorder.i
 
 # target to preprocess a source file
-tests/test_basic_blocked_gemm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_basic_blocked_gemm.dir/build.make CMakeFiles/test_basic_blocked_gemm.dir/tests/test_basic_blocked_gemm.cpp.i
-.PHONY : tests/test_basic_blocked_gemm.cpp.i
+gemm/v1_loop_reorder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/gemm/v1_loop_reorder.cpp.i
+.PHONY : gemm/v1_loop_reorder.cpp.i
 
-tests/test_basic_blocked_gemm.s: tests/test_basic_blocked_gemm.cpp.s
-.PHONY : tests/test_basic_blocked_gemm.s
+gemm/v1_loop_reorder.s: gemm/v1_loop_reorder.cpp.s
+.PHONY : gemm/v1_loop_reorder.s
 
 # target to generate assembly for a file
-tests/test_basic_blocked_gemm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_basic_blocked_gemm.dir/build.make CMakeFiles/test_basic_blocked_gemm.dir/tests/test_basic_blocked_gemm.cpp.s
-.PHONY : tests/test_basic_blocked_gemm.cpp.s
+gemm/v1_loop_reorder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/gemm/v1_loop_reorder.cpp.s
+.PHONY : gemm/v1_loop_reorder.cpp.s
 
-tests/test_layout_and_alignment.o: tests/test_layout_and_alignment.cpp.o
-.PHONY : tests/test_layout_and_alignment.o
+gemm/v2_blocked.o: gemm/v2_blocked.cpp.o
+.PHONY : gemm/v2_blocked.o
 
 # target to build an object file
-tests/test_layout_and_alignment.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_and_alignment.dir/build.make CMakeFiles/test_layout_and_alignment.dir/tests/test_layout_and_alignment.cpp.o
-.PHONY : tests/test_layout_and_alignment.cpp.o
+gemm/v2_blocked.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/gemm/v2_blocked.cpp.o
+.PHONY : gemm/v2_blocked.cpp.o
 
-tests/test_layout_and_alignment.i: tests/test_layout_and_alignment.cpp.i
-.PHONY : tests/test_layout_and_alignment.i
+gemm/v2_blocked.i: gemm/v2_blocked.cpp.i
+.PHONY : gemm/v2_blocked.i
 
 # target to preprocess a source file
-tests/test_layout_and_alignment.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_and_alignment.dir/build.make CMakeFiles/test_layout_and_alignment.dir/tests/test_layout_and_alignment.cpp.i
-.PHONY : tests/test_layout_and_alignment.cpp.i
+gemm/v2_blocked.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/gemm/v2_blocked.cpp.i
+.PHONY : gemm/v2_blocked.cpp.i
 
-tests/test_layout_and_alignment.s: tests/test_layout_and_alignment.cpp.s
-.PHONY : tests/test_layout_and_alignment.s
+gemm/v2_blocked.s: gemm/v2_blocked.cpp.s
+.PHONY : gemm/v2_blocked.s
 
 # target to generate assembly for a file
-tests/test_layout_and_alignment.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_and_alignment.dir/build.make CMakeFiles/test_layout_and_alignment.dir/tests/test_layout_and_alignment.cpp.s
-.PHONY : tests/test_layout_and_alignment.cpp.s
+gemm/v2_blocked.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/gemm/v2_blocked.cpp.s
+.PHONY : gemm/v2_blocked.cpp.s
 
-tests/test_layout_math.o: tests/test_layout_math.cpp.o
-.PHONY : tests/test_layout_math.o
+gemm/v3_scalar_tile.o: gemm/v3_scalar_tile.cpp.o
+.PHONY : gemm/v3_scalar_tile.o
 
 # target to build an object file
-tests/test_layout_math.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_math.dir/build.make CMakeFiles/test_layout_math.dir/tests/test_layout_math.cpp.o
-.PHONY : tests/test_layout_math.cpp.o
+gemm/v3_scalar_tile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/gemm/v3_scalar_tile.cpp.o
+.PHONY : gemm/v3_scalar_tile.cpp.o
 
-tests/test_layout_math.i: tests/test_layout_math.cpp.i
-.PHONY : tests/test_layout_math.i
+gemm/v3_scalar_tile.i: gemm/v3_scalar_tile.cpp.i
+.PHONY : gemm/v3_scalar_tile.i
 
 # target to preprocess a source file
-tests/test_layout_math.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_math.dir/build.make CMakeFiles/test_layout_math.dir/tests/test_layout_math.cpp.i
-.PHONY : tests/test_layout_math.cpp.i
+gemm/v3_scalar_tile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/gemm/v3_scalar_tile.cpp.i
+.PHONY : gemm/v3_scalar_tile.cpp.i
 
-tests/test_layout_math.s: tests/test_layout_math.cpp.s
-.PHONY : tests/test_layout_math.s
+gemm/v3_scalar_tile.s: gemm/v3_scalar_tile.cpp.s
+.PHONY : gemm/v3_scalar_tile.s
 
 # target to generate assembly for a file
-tests/test_layout_math.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_math.dir/build.make CMakeFiles/test_layout_math.dir/tests/test_layout_math.cpp.s
-.PHONY : tests/test_layout_math.cpp.s
+gemm/v3_scalar_tile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/gemm/v3_scalar_tile.cpp.s
+.PHONY : gemm/v3_scalar_tile.cpp.s
 
-tests/test_multiple_block_configs.o: tests/test_multiple_block_configs.cpp.o
-.PHONY : tests/test_multiple_block_configs.o
+tests/benchmark_gemm_v0.o: tests/benchmark_gemm_v0.cpp.o
+.PHONY : tests/benchmark_gemm_v0.o
 
 # target to build an object file
-tests/test_multiple_block_configs.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_multiple_block_configs.dir/build.make CMakeFiles/test_multiple_block_configs.dir/tests/test_multiple_block_configs.cpp.o
-.PHONY : tests/test_multiple_block_configs.cpp.o
+tests/benchmark_gemm_v0.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v0.dir/build.make CMakeFiles/benchmark_gemm_v0.dir/tests/benchmark_gemm_v0.cpp.o
+.PHONY : tests/benchmark_gemm_v0.cpp.o
 
-tests/test_multiple_block_configs.i: tests/test_multiple_block_configs.cpp.i
-.PHONY : tests/test_multiple_block_configs.i
+tests/benchmark_gemm_v0.i: tests/benchmark_gemm_v0.cpp.i
+.PHONY : tests/benchmark_gemm_v0.i
 
 # target to preprocess a source file
-tests/test_multiple_block_configs.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_multiple_block_configs.dir/build.make CMakeFiles/test_multiple_block_configs.dir/tests/test_multiple_block_configs.cpp.i
-.PHONY : tests/test_multiple_block_configs.cpp.i
+tests/benchmark_gemm_v0.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v0.dir/build.make CMakeFiles/benchmark_gemm_v0.dir/tests/benchmark_gemm_v0.cpp.i
+.PHONY : tests/benchmark_gemm_v0.cpp.i
 
-tests/test_multiple_block_configs.s: tests/test_multiple_block_configs.cpp.s
-.PHONY : tests/test_multiple_block_configs.s
+tests/benchmark_gemm_v0.s: tests/benchmark_gemm_v0.cpp.s
+.PHONY : tests/benchmark_gemm_v0.s
 
 # target to generate assembly for a file
-tests/test_multiple_block_configs.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_multiple_block_configs.dir/build.make CMakeFiles/test_multiple_block_configs.dir/tests/test_multiple_block_configs.cpp.s
-.PHONY : tests/test_multiple_block_configs.cpp.s
+tests/benchmark_gemm_v0.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v0.dir/build.make CMakeFiles/benchmark_gemm_v0.dir/tests/benchmark_gemm_v0.cpp.s
+.PHONY : tests/benchmark_gemm_v0.cpp.s
 
-tests/test_packing_correctness.o: tests/test_packing_correctness.cpp.o
-.PHONY : tests/test_packing_correctness.o
+tests/benchmark_gemm_v1.o: tests/benchmark_gemm_v1.cpp.o
+.PHONY : tests/benchmark_gemm_v1.o
 
 # target to build an object file
-tests/test_packing_correctness.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_packing_correctness.dir/build.make CMakeFiles/test_packing_correctness.dir/tests/test_packing_correctness.cpp.o
-.PHONY : tests/test_packing_correctness.cpp.o
+tests/benchmark_gemm_v1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v1.dir/build.make CMakeFiles/benchmark_gemm_v1.dir/tests/benchmark_gemm_v1.cpp.o
+.PHONY : tests/benchmark_gemm_v1.cpp.o
 
-tests/test_packing_correctness.i: tests/test_packing_correctness.cpp.i
-.PHONY : tests/test_packing_correctness.i
+tests/benchmark_gemm_v1.i: tests/benchmark_gemm_v1.cpp.i
+.PHONY : tests/benchmark_gemm_v1.i
 
 # target to preprocess a source file
-tests/test_packing_correctness.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_packing_correctness.dir/build.make CMakeFiles/test_packing_correctness.dir/tests/test_packing_correctness.cpp.i
-.PHONY : tests/test_packing_correctness.cpp.i
+tests/benchmark_gemm_v1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v1.dir/build.make CMakeFiles/benchmark_gemm_v1.dir/tests/benchmark_gemm_v1.cpp.i
+.PHONY : tests/benchmark_gemm_v1.cpp.i
 
-tests/test_packing_correctness.s: tests/test_packing_correctness.cpp.s
-.PHONY : tests/test_packing_correctness.s
+tests/benchmark_gemm_v1.s: tests/benchmark_gemm_v1.cpp.s
+.PHONY : tests/benchmark_gemm_v1.s
 
 # target to generate assembly for a file
-tests/test_packing_correctness.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_packing_correctness.dir/build.make CMakeFiles/test_packing_correctness.dir/tests/test_packing_correctness.cpp.s
-.PHONY : tests/test_packing_correctness.cpp.s
+tests/benchmark_gemm_v1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v1.dir/build.make CMakeFiles/benchmark_gemm_v1.dir/tests/benchmark_gemm_v1.cpp.s
+.PHONY : tests/benchmark_gemm_v1.cpp.s
 
-tests/test_reset_behavior.o: tests/test_reset_behavior.cpp.o
-.PHONY : tests/test_reset_behavior.o
+tests/benchmark_gemm_v2.o: tests/benchmark_gemm_v2.cpp.o
+.PHONY : tests/benchmark_gemm_v2.o
 
 # target to build an object file
-tests/test_reset_behavior.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_reset_behavior.dir/build.make CMakeFiles/test_reset_behavior.dir/tests/test_reset_behavior.cpp.o
-.PHONY : tests/test_reset_behavior.cpp.o
+tests/benchmark_gemm_v2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v2.dir/build.make CMakeFiles/benchmark_gemm_v2.dir/tests/benchmark_gemm_v2.cpp.o
+.PHONY : tests/benchmark_gemm_v2.cpp.o
 
-tests/test_reset_behavior.i: tests/test_reset_behavior.cpp.i
-.PHONY : tests/test_reset_behavior.i
+tests/benchmark_gemm_v2.i: tests/benchmark_gemm_v2.cpp.i
+.PHONY : tests/benchmark_gemm_v2.i
 
 # target to preprocess a source file
-tests/test_reset_behavior.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_reset_behavior.dir/build.make CMakeFiles/test_reset_behavior.dir/tests/test_reset_behavior.cpp.i
-.PHONY : tests/test_reset_behavior.cpp.i
+tests/benchmark_gemm_v2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v2.dir/build.make CMakeFiles/benchmark_gemm_v2.dir/tests/benchmark_gemm_v2.cpp.i
+.PHONY : tests/benchmark_gemm_v2.cpp.i
 
-tests/test_reset_behavior.s: tests/test_reset_behavior.cpp.s
-.PHONY : tests/test_reset_behavior.s
+tests/benchmark_gemm_v2.s: tests/benchmark_gemm_v2.cpp.s
+.PHONY : tests/benchmark_gemm_v2.s
 
 # target to generate assembly for a file
-tests/test_reset_behavior.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_reset_behavior.dir/build.make CMakeFiles/test_reset_behavior.dir/tests/test_reset_behavior.cpp.s
-.PHONY : tests/test_reset_behavior.cpp.s
+tests/benchmark_gemm_v2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v2.dir/build.make CMakeFiles/benchmark_gemm_v2.dir/tests/benchmark_gemm_v2.cpp.s
+.PHONY : tests/benchmark_gemm_v2.cpp.s
 
-tests/test_stress_allocation.o: tests/test_stress_allocation.cpp.o
-.PHONY : tests/test_stress_allocation.o
+tests/benchmark_gemm_v3.o: tests/benchmark_gemm_v3.cpp.o
+.PHONY : tests/benchmark_gemm_v3.o
 
 # target to build an object file
-tests/test_stress_allocation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stress_allocation.dir/build.make CMakeFiles/test_stress_allocation.dir/tests/test_stress_allocation.cpp.o
-.PHONY : tests/test_stress_allocation.cpp.o
+tests/benchmark_gemm_v3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v3.dir/build.make CMakeFiles/benchmark_gemm_v3.dir/tests/benchmark_gemm_v3.cpp.o
+.PHONY : tests/benchmark_gemm_v3.cpp.o
 
-tests/test_stress_allocation.i: tests/test_stress_allocation.cpp.i
-.PHONY : tests/test_stress_allocation.i
+tests/benchmark_gemm_v3.i: tests/benchmark_gemm_v3.cpp.i
+.PHONY : tests/benchmark_gemm_v3.i
 
 # target to preprocess a source file
-tests/test_stress_allocation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stress_allocation.dir/build.make CMakeFiles/test_stress_allocation.dir/tests/test_stress_allocation.cpp.i
-.PHONY : tests/test_stress_allocation.cpp.i
+tests/benchmark_gemm_v3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v3.dir/build.make CMakeFiles/benchmark_gemm_v3.dir/tests/benchmark_gemm_v3.cpp.i
+.PHONY : tests/benchmark_gemm_v3.cpp.i
 
-tests/test_stress_allocation.s: tests/test_stress_allocation.cpp.s
-.PHONY : tests/test_stress_allocation.s
+tests/benchmark_gemm_v3.s: tests/benchmark_gemm_v3.cpp.s
+.PHONY : tests/benchmark_gemm_v3.s
 
 # target to generate assembly for a file
-tests/test_stress_allocation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stress_allocation.dir/build.make CMakeFiles/test_stress_allocation.dir/tests/test_stress_allocation.cpp.s
-.PHONY : tests/test_stress_allocation.cpp.s
+tests/benchmark_gemm_v3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v3.dir/build.make CMakeFiles/benchmark_gemm_v3.dir/tests/benchmark_gemm_v3.cpp.s
+.PHONY : tests/benchmark_gemm_v3.cpp.s
+
+tests/test_gemm_correctness.o: tests/test_gemm_correctness.cpp.o
+.PHONY : tests/test_gemm_correctness.o
+
+# target to build an object file
+tests/test_gemm_correctness.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gemm_correctness.dir/build.make CMakeFiles/test_gemm_correctness.dir/tests/test_gemm_correctness.cpp.o
+.PHONY : tests/test_gemm_correctness.cpp.o
+
+tests/test_gemm_correctness.i: tests/test_gemm_correctness.cpp.i
+.PHONY : tests/test_gemm_correctness.i
+
+# target to preprocess a source file
+tests/test_gemm_correctness.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gemm_correctness.dir/build.make CMakeFiles/test_gemm_correctness.dir/tests/test_gemm_correctness.cpp.i
+.PHONY : tests/test_gemm_correctness.cpp.i
+
+tests/test_gemm_correctness.s: tests/test_gemm_correctness.cpp.s
+.PHONY : tests/test_gemm_correctness.s
+
+# target to generate assembly for a file
+tests/test_gemm_correctness.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gemm_correctness.dir/build.make CMakeFiles/test_gemm_correctness.dir/tests/test_gemm_correctness.cpp.s
+.PHONY : tests/test_gemm_correctness.cpp.s
 
 # Help Target
 help:
@@ -541,14 +539,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... atlas_memory"
-	@echo "... benchmark_naive_vs_packed"
-	@echo "... test_basic_blocked_gemm"
-	@echo "... test_layout_and_alignment"
-	@echo "... test_layout_math"
-	@echo "... test_multiple_block_configs"
-	@echo "... test_packing_correctness"
-	@echo "... test_reset_behavior"
-	@echo "... test_stress_allocation"
+	@echo "... benchmark_gemm_v0"
+	@echo "... benchmark_gemm_v1"
+	@echo "... benchmark_gemm_v2"
+	@echo "... benchmark_gemm_v3"
+	@echo "... gemm_kernels"
+	@echo "... test_gemm_correctness"
 	@echo "... atlas_memory/src/layout.o"
 	@echo "... atlas_memory/src/layout.i"
 	@echo "... atlas_memory/src/layout.s"
@@ -561,30 +557,33 @@ help:
 	@echo "... atlas_memory/src/workspace.o"
 	@echo "... atlas_memory/src/workspace.i"
 	@echo "... atlas_memory/src/workspace.s"
-	@echo "... tests/benchmark_naive_vs_packed.o"
-	@echo "... tests/benchmark_naive_vs_packed.i"
-	@echo "... tests/benchmark_naive_vs_packed.s"
-	@echo "... tests/test_basic_blocked_gemm.o"
-	@echo "... tests/test_basic_blocked_gemm.i"
-	@echo "... tests/test_basic_blocked_gemm.s"
-	@echo "... tests/test_layout_and_alignment.o"
-	@echo "... tests/test_layout_and_alignment.i"
-	@echo "... tests/test_layout_and_alignment.s"
-	@echo "... tests/test_layout_math.o"
-	@echo "... tests/test_layout_math.i"
-	@echo "... tests/test_layout_math.s"
-	@echo "... tests/test_multiple_block_configs.o"
-	@echo "... tests/test_multiple_block_configs.i"
-	@echo "... tests/test_multiple_block_configs.s"
-	@echo "... tests/test_packing_correctness.o"
-	@echo "... tests/test_packing_correctness.i"
-	@echo "... tests/test_packing_correctness.s"
-	@echo "... tests/test_reset_behavior.o"
-	@echo "... tests/test_reset_behavior.i"
-	@echo "... tests/test_reset_behavior.s"
-	@echo "... tests/test_stress_allocation.o"
-	@echo "... tests/test_stress_allocation.i"
-	@echo "... tests/test_stress_allocation.s"
+	@echo "... gemm/v0_naive.o"
+	@echo "... gemm/v0_naive.i"
+	@echo "... gemm/v0_naive.s"
+	@echo "... gemm/v1_loop_reorder.o"
+	@echo "... gemm/v1_loop_reorder.i"
+	@echo "... gemm/v1_loop_reorder.s"
+	@echo "... gemm/v2_blocked.o"
+	@echo "... gemm/v2_blocked.i"
+	@echo "... gemm/v2_blocked.s"
+	@echo "... gemm/v3_scalar_tile.o"
+	@echo "... gemm/v3_scalar_tile.i"
+	@echo "... gemm/v3_scalar_tile.s"
+	@echo "... tests/benchmark_gemm_v0.o"
+	@echo "... tests/benchmark_gemm_v0.i"
+	@echo "... tests/benchmark_gemm_v0.s"
+	@echo "... tests/benchmark_gemm_v1.o"
+	@echo "... tests/benchmark_gemm_v1.i"
+	@echo "... tests/benchmark_gemm_v1.s"
+	@echo "... tests/benchmark_gemm_v2.o"
+	@echo "... tests/benchmark_gemm_v2.i"
+	@echo "... tests/benchmark_gemm_v2.s"
+	@echo "... tests/benchmark_gemm_v3.o"
+	@echo "... tests/benchmark_gemm_v3.i"
+	@echo "... tests/benchmark_gemm_v3.s"
+	@echo "... tests/test_gemm_correctness.o"
+	@echo "... tests/test_gemm_correctness.i"
+	@echo "... tests/test_gemm_correctness.s"
 .PHONY : help
 
 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgemm_kernels.a CMakeFiles/gemm_kernels.dir/gemm/v0_naive.cpp.o CMakeFiles/gemm_kernels.dir/gemm/v1_loop_reorder.cpp.o CMakeFiles/gemm_kernels.dir/gemm/v2_blocked.cpp.o CMakeFiles/gemm_kernels.dir/gemm/v3_scalar_tile.cpp.o
+/usr/bin/ranlib libgemm_kernels.a

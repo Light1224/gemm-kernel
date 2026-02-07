@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/llvm/lib -L/opt/homebrew/opt/libomp/lib CMakeFiles/benchmark_gemm_v1.dir/tests/benchmark_gemm_v1.cpp.o -o benchmark_gemm_v1  libgemm_kernels.a libatlas_memory.a
