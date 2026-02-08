@@ -18,7 +18,7 @@ static float max_abs_diff(const std::vector<float> &a,
 }
 
 static void fill_random(std::vector<float> &x) {
-  std::mt19937 rng(42);
+  static std::mt19937 rng(42);
   std::uniform_real_distribution<float> dist(-1.0f, 1.0f);
   for (float &v : x)
     v = dist(rng);
@@ -29,11 +29,10 @@ int main() {
 
   std::vector<int> sizes = {8, 16, 32, 64, 96, 128, 192, 256};
 
-  std::cout << "\n=== GEMM correctness check ===\n";
-  std::cout << std::setw(6) << "N" << std::setw(15) << "v1 error"
-            << std::setw(15) << "v2 error" << std::setw(15) << "v3 error"
+  std::cout << "\n=== GEMM v6 Parallel Correctness Check ===\n";
+  std::cout << std::setw(6) << "N" << std::setw(22) << "max |v6 - naive|"
             << "\n";
-  std::cout << std::string(51, '-') << "\n";
+  std::cout << std::string(30, '-') << "\n";
 
   for (int n : sizes) {
     GemmConfig cfg;
@@ -42,32 +41,29 @@ int main() {
 
     std::vector<float> A(n * n);
     std::vector<float> B(n * n);
-    std::vector<float> C_ref(n * n);
-    std::vector<float> C1(n * n);
-    std::vector<float> C2(n * n);
-    std::vector<float> C3(n * n);
+    std::vector<float> C_ref(n * n, 0.0f);
+    std::vector<float> C_v6(n * n, 0.0f);
 
     fill_random(A);
     fill_random(B);
 
+    // Reference
     gemm_v0_naive(A.data(), B.data(), C_ref.data(), cfg);
-    gemm_v1_loop_reorder(A.data(), B.data(), C1.data(), cfg);
-    gemm_v2_blocked(A.data(), B.data(), C2.data(), cfg);
-    gemm_v3_scalar_tile(A.data(), B.data(), C3.data(), cfg);
 
-    float e1 = max_abs_diff(C_ref, C1);
-    float e2 = max_abs_diff(C_ref, C2);
-    float e3 = max_abs_diff(C_ref, C3);
+    // v6 parallel packed
+    gemm_v6_parallel(A.data(), B.data(), C_v6.data(), cfg);
 
-    std::cout << std::setw(6) << n << std::setw(15) << e1 << std::setw(15) << e2
-              << std::setw(15) << e3 << "\n";
+    float err = max_abs_diff(C_ref, C_v6);
 
-    if (e1 > eps || e2 > eps || e3 > eps) {
-      std::cerr << "\n❌ GEMM correctness FAILED at N=" << n << "\n";
+    std::cout << std::setw(6) << n << std::setw(22) << err << "\n";
+
+    if (err > eps) {
+      std::cerr << "\n❌ GEMM v6 FAILED at N=" << n << " (error = " << err
+                << ")\n";
       return 1;
     }
   }
 
-  std::cout << "\n✅ All GEMM versions passed correctness checks.\n";
+  std::cout << "\n✅ GEMM v6 passed all correctness checks.\n";
   return 0;
 }

@@ -128,12 +128,72 @@ CMakeFiles/gemm_kernels.dir/gemm/v3_scalar_tile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gemm_kernels.dir/gemm/v3_scalar_tile.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shamit/Documents/code/hpc/atlas/gemm/v3_scalar_tile.cpp -o CMakeFiles/gemm_kernels.dir/gemm/v3_scalar_tile.cpp.s
 
+CMakeFiles/gemm_kernels.dir/gemm/v4_neon_4x4.cpp.o: CMakeFiles/gemm_kernels.dir/flags.make
+CMakeFiles/gemm_kernels.dir/gemm/v4_neon_4x4.cpp.o: /Users/shamit/Documents/code/hpc/atlas/gemm/v4_neon_4x4.cpp
+CMakeFiles/gemm_kernels.dir/gemm/v4_neon_4x4.cpp.o: CMakeFiles/gemm_kernels.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gemm_kernels.dir/gemm/v4_neon_4x4.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gemm_kernels.dir/gemm/v4_neon_4x4.cpp.o -MF CMakeFiles/gemm_kernels.dir/gemm/v4_neon_4x4.cpp.o.d -o CMakeFiles/gemm_kernels.dir/gemm/v4_neon_4x4.cpp.o -c /Users/shamit/Documents/code/hpc/atlas/gemm/v4_neon_4x4.cpp
+
+CMakeFiles/gemm_kernels.dir/gemm/v4_neon_4x4.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gemm_kernels.dir/gemm/v4_neon_4x4.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shamit/Documents/code/hpc/atlas/gemm/v4_neon_4x4.cpp > CMakeFiles/gemm_kernels.dir/gemm/v4_neon_4x4.cpp.i
+
+CMakeFiles/gemm_kernels.dir/gemm/v4_neon_4x4.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gemm_kernels.dir/gemm/v4_neon_4x4.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shamit/Documents/code/hpc/atlas/gemm/v4_neon_4x4.cpp -o CMakeFiles/gemm_kernels.dir/gemm/v4_neon_4x4.cpp.s
+
+CMakeFiles/gemm_kernels.dir/gemm/v4_neon_8x8.cpp.o: CMakeFiles/gemm_kernels.dir/flags.make
+CMakeFiles/gemm_kernels.dir/gemm/v4_neon_8x8.cpp.o: /Users/shamit/Documents/code/hpc/atlas/gemm/v4_neon_8x8.cpp
+CMakeFiles/gemm_kernels.dir/gemm/v4_neon_8x8.cpp.o: CMakeFiles/gemm_kernels.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gemm_kernels.dir/gemm/v4_neon_8x8.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gemm_kernels.dir/gemm/v4_neon_8x8.cpp.o -MF CMakeFiles/gemm_kernels.dir/gemm/v4_neon_8x8.cpp.o.d -o CMakeFiles/gemm_kernels.dir/gemm/v4_neon_8x8.cpp.o -c /Users/shamit/Documents/code/hpc/atlas/gemm/v4_neon_8x8.cpp
+
+CMakeFiles/gemm_kernels.dir/gemm/v4_neon_8x8.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gemm_kernels.dir/gemm/v4_neon_8x8.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shamit/Documents/code/hpc/atlas/gemm/v4_neon_8x8.cpp > CMakeFiles/gemm_kernels.dir/gemm/v4_neon_8x8.cpp.i
+
+CMakeFiles/gemm_kernels.dir/gemm/v4_neon_8x8.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gemm_kernels.dir/gemm/v4_neon_8x8.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shamit/Documents/code/hpc/atlas/gemm/v4_neon_8x8.cpp -o CMakeFiles/gemm_kernels.dir/gemm/v4_neon_8x8.cpp.s
+
+CMakeFiles/gemm_kernels.dir/gemm/v5_packed.cpp.o: CMakeFiles/gemm_kernels.dir/flags.make
+CMakeFiles/gemm_kernels.dir/gemm/v5_packed.cpp.o: /Users/shamit/Documents/code/hpc/atlas/gemm/v5_packed.cpp
+CMakeFiles/gemm_kernels.dir/gemm/v5_packed.cpp.o: CMakeFiles/gemm_kernels.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gemm_kernels.dir/gemm/v5_packed.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gemm_kernels.dir/gemm/v5_packed.cpp.o -MF CMakeFiles/gemm_kernels.dir/gemm/v5_packed.cpp.o.d -o CMakeFiles/gemm_kernels.dir/gemm/v5_packed.cpp.o -c /Users/shamit/Documents/code/hpc/atlas/gemm/v5_packed.cpp
+
+CMakeFiles/gemm_kernels.dir/gemm/v5_packed.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gemm_kernels.dir/gemm/v5_packed.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shamit/Documents/code/hpc/atlas/gemm/v5_packed.cpp > CMakeFiles/gemm_kernels.dir/gemm/v5_packed.cpp.i
+
+CMakeFiles/gemm_kernels.dir/gemm/v5_packed.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gemm_kernels.dir/gemm/v5_packed.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shamit/Documents/code/hpc/atlas/gemm/v5_packed.cpp -o CMakeFiles/gemm_kernels.dir/gemm/v5_packed.cpp.s
+
+CMakeFiles/gemm_kernels.dir/gemm/v6_parallel.cpp.o: CMakeFiles/gemm_kernels.dir/flags.make
+CMakeFiles/gemm_kernels.dir/gemm/v6_parallel.cpp.o: /Users/shamit/Documents/code/hpc/atlas/gemm/v6_parallel.cpp
+CMakeFiles/gemm_kernels.dir/gemm/v6_parallel.cpp.o: CMakeFiles/gemm_kernels.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gemm_kernels.dir/gemm/v6_parallel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gemm_kernels.dir/gemm/v6_parallel.cpp.o -MF CMakeFiles/gemm_kernels.dir/gemm/v6_parallel.cpp.o.d -o CMakeFiles/gemm_kernels.dir/gemm/v6_parallel.cpp.o -c /Users/shamit/Documents/code/hpc/atlas/gemm/v6_parallel.cpp
+
+CMakeFiles/gemm_kernels.dir/gemm/v6_parallel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gemm_kernels.dir/gemm/v6_parallel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shamit/Documents/code/hpc/atlas/gemm/v6_parallel.cpp > CMakeFiles/gemm_kernels.dir/gemm/v6_parallel.cpp.i
+
+CMakeFiles/gemm_kernels.dir/gemm/v6_parallel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gemm_kernels.dir/gemm/v6_parallel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shamit/Documents/code/hpc/atlas/gemm/v6_parallel.cpp -o CMakeFiles/gemm_kernels.dir/gemm/v6_parallel.cpp.s
+
 # Object files for target gemm_kernels
 gemm_kernels_OBJECTS = \
 "CMakeFiles/gemm_kernels.dir/gemm/v0_naive.cpp.o" \
 "CMakeFiles/gemm_kernels.dir/gemm/v1_loop_reorder.cpp.o" \
 "CMakeFiles/gemm_kernels.dir/gemm/v2_blocked.cpp.o" \
-"CMakeFiles/gemm_kernels.dir/gemm/v3_scalar_tile.cpp.o"
+"CMakeFiles/gemm_kernels.dir/gemm/v3_scalar_tile.cpp.o" \
+"CMakeFiles/gemm_kernels.dir/gemm/v4_neon_4x4.cpp.o" \
+"CMakeFiles/gemm_kernels.dir/gemm/v4_neon_8x8.cpp.o" \
+"CMakeFiles/gemm_kernels.dir/gemm/v5_packed.cpp.o" \
+"CMakeFiles/gemm_kernels.dir/gemm/v6_parallel.cpp.o"
 
 # External object files for target gemm_kernels
 gemm_kernels_EXTERNAL_OBJECTS =
@@ -142,9 +202,13 @@ libgemm_kernels.a: CMakeFiles/gemm_kernels.dir/gemm/v0_naive.cpp.o
 libgemm_kernels.a: CMakeFiles/gemm_kernels.dir/gemm/v1_loop_reorder.cpp.o
 libgemm_kernels.a: CMakeFiles/gemm_kernels.dir/gemm/v2_blocked.cpp.o
 libgemm_kernels.a: CMakeFiles/gemm_kernels.dir/gemm/v3_scalar_tile.cpp.o
+libgemm_kernels.a: CMakeFiles/gemm_kernels.dir/gemm/v4_neon_4x4.cpp.o
+libgemm_kernels.a: CMakeFiles/gemm_kernels.dir/gemm/v4_neon_8x8.cpp.o
+libgemm_kernels.a: CMakeFiles/gemm_kernels.dir/gemm/v5_packed.cpp.o
+libgemm_kernels.a: CMakeFiles/gemm_kernels.dir/gemm/v6_parallel.cpp.o
 libgemm_kernels.a: CMakeFiles/gemm_kernels.dir/build.make
 libgemm_kernels.a: CMakeFiles/gemm_kernels.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libgemm_kernels.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libgemm_kernels.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/gemm_kernels.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gemm_kernels.dir/link.txt --verbose=$(VERBOSE)
 

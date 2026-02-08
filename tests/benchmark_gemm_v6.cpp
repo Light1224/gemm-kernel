@@ -1,0 +1,53 @@
+#include "benchmark_common.hpp"
+
+int main() {
+  using namespace gemm;
+  using namespace bench;
+
+  print_header("GEMM v6 Parallel Packed + NEON");
+
+  auto run = [&](size_t M, size_t N, size_t K) {
+    std::vector<float> A(M * K);
+    std::vector<float> B(K * N);
+    std::vector<float> C(M * N);
+
+    fill_matrix(A);
+    fill_matrix(B);
+    std::fill(C.begin(), C.end(), 0.0f);
+
+    GemmConfig cfg{M, N, K, K, N, N};
+
+    // Warmup
+    gemm_v6_parallel(A.data(), B.data(), C.data(), cfg);
+
+    std::fill(C.begin(), C.end(), 0.0f);
+
+    auto t0 = clock::now();
+    gemm_v6_parallel(A.data(), B.data(), C.data(), cfg);
+    auto t1 = clock::now();
+
+    print_row(M, N, K, seconds(t0, t1));
+  };
+
+  print_scenario("Square matrices");
+  for (size_t n = 8; n <= 1024; n *= 2)
+    run(n, n, n);
+
+  print_scenario("Tall-skinny (B reuse)");
+  for (size_t m : {128, 256, 512, 1024})
+    run(m, 64, 1024);
+
+  print_scenario("Wide (A reuse)");
+  for (size_t n : {128, 256, 512, 1024})
+    run(64, n, 1024);
+
+  print_scenario("Large-K regime");
+  for (size_t k : {128, 256, 512, 1024, 2048})
+    run(256, 256, k);
+
+  print_scenario("Cache-stress");
+  for (size_t n : {384, 512, 768})
+    run(n, n, n);
+
+  return 0;
+}

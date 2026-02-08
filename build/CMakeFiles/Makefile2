@@ -69,7 +69,20 @@ all: CMakeFiles/benchmark_gemm_v0.dir/all
 all: CMakeFiles/benchmark_gemm_v1.dir/all
 all: CMakeFiles/benchmark_gemm_v2.dir/all
 all: CMakeFiles/benchmark_gemm_v3.dir/all
+all: CMakeFiles/benchmark_gemm_v4_4x4.dir/all
+all: CMakeFiles/benchmark_gemm_v4_8x8.dir/all
+all: CMakeFiles/benchmark_gemm_v5.dir/all
+all: CMakeFiles/benchmark_gemm_v6.dir/all
+all: CMakeFiles/benchmark_naive_vs_packed.dir/all
+all: CMakeFiles/test_basic_blocked_gemm.dir/all
 all: CMakeFiles/test_gemm_correctness.dir/all
+all: CMakeFiles/test_layout_and_alignment.dir/all
+all: CMakeFiles/test_layout_math.dir/all
+all: CMakeFiles/test_multiple_block_configs.dir/all
+all: CMakeFiles/test_packing_correctness.dir/all
+all: CMakeFiles/test_reset_behavior.dir/all
+all: CMakeFiles/test_stress_allocation.dir/all
+all: CMakeFiles/test_vs_blas.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
@@ -79,7 +92,20 @@ codegen: CMakeFiles/benchmark_gemm_v0.dir/codegen
 codegen: CMakeFiles/benchmark_gemm_v1.dir/codegen
 codegen: CMakeFiles/benchmark_gemm_v2.dir/codegen
 codegen: CMakeFiles/benchmark_gemm_v3.dir/codegen
+codegen: CMakeFiles/benchmark_gemm_v4_4x4.dir/codegen
+codegen: CMakeFiles/benchmark_gemm_v4_8x8.dir/codegen
+codegen: CMakeFiles/benchmark_gemm_v5.dir/codegen
+codegen: CMakeFiles/benchmark_gemm_v6.dir/codegen
+codegen: CMakeFiles/benchmark_naive_vs_packed.dir/codegen
+codegen: CMakeFiles/test_basic_blocked_gemm.dir/codegen
 codegen: CMakeFiles/test_gemm_correctness.dir/codegen
+codegen: CMakeFiles/test_layout_and_alignment.dir/codegen
+codegen: CMakeFiles/test_layout_math.dir/codegen
+codegen: CMakeFiles/test_multiple_block_configs.dir/codegen
+codegen: CMakeFiles/test_packing_correctness.dir/codegen
+codegen: CMakeFiles/test_reset_behavior.dir/codegen
+codegen: CMakeFiles/test_stress_allocation.dir/codegen
+codegen: CMakeFiles/test_vs_blas.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -93,7 +119,20 @@ clean: CMakeFiles/benchmark_gemm_v0.dir/clean
 clean: CMakeFiles/benchmark_gemm_v1.dir/clean
 clean: CMakeFiles/benchmark_gemm_v2.dir/clean
 clean: CMakeFiles/benchmark_gemm_v3.dir/clean
+clean: CMakeFiles/benchmark_gemm_v4_4x4.dir/clean
+clean: CMakeFiles/benchmark_gemm_v4_8x8.dir/clean
+clean: CMakeFiles/benchmark_gemm_v5.dir/clean
+clean: CMakeFiles/benchmark_gemm_v6.dir/clean
+clean: CMakeFiles/benchmark_naive_vs_packed.dir/clean
+clean: CMakeFiles/test_basic_blocked_gemm.dir/clean
 clean: CMakeFiles/test_gemm_correctness.dir/clean
+clean: CMakeFiles/test_layout_and_alignment.dir/clean
+clean: CMakeFiles/test_layout_math.dir/clean
+clean: CMakeFiles/test_multiple_block_configs.dir/clean
+clean: CMakeFiles/test_packing_correctness.dir/clean
+clean: CMakeFiles/test_reset_behavior.dir/clean
+clean: CMakeFiles/test_stress_allocation.dir/clean
+clean: CMakeFiles/test_vs_blas.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -132,15 +171,15 @@ CMakeFiles/atlas_memory.dir/clean:
 # Target rules for target CMakeFiles/gemm_kernels.dir
 
 # All Build rule for target.
-CMakeFiles/gemm_kernels.dir/all:
+CMakeFiles/gemm_kernels.dir/all: CMakeFiles/atlas_memory.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=14,15,16,17,18 "Built target gemm_kernels"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32 "Built target gemm_kernels"
 .PHONY : CMakeFiles/gemm_kernels.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gemm_kernels.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gemm_kernels.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
 .PHONY : CMakeFiles/gemm_kernels.dir/rule
@@ -152,7 +191,7 @@ gemm_kernels: CMakeFiles/gemm_kernels.dir/rule
 # codegen rule for target.
 CMakeFiles/gemm_kernels.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm_kernels.dir/build.make CMakeFiles/gemm_kernels.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=14,15,16,17,18 "Finished codegen for target gemm_kernels"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32 "Finished codegen for target gemm_kernels"
 .PHONY : CMakeFiles/gemm_kernels.dir/codegen
 
 # clean rule for target.
@@ -164,8 +203,8 @@ CMakeFiles/gemm_kernels.dir/clean:
 # Target rules for target CMakeFiles/benchmark_gemm_v0.dir
 
 # All Build rule for target.
-CMakeFiles/benchmark_gemm_v0.dir/all: CMakeFiles/gemm_kernels.dir/all
 CMakeFiles/benchmark_gemm_v0.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/benchmark_gemm_v0.dir/all: CMakeFiles/gemm_kernels.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v0.dir/build.make CMakeFiles/benchmark_gemm_v0.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v0.dir/build.make CMakeFiles/benchmark_gemm_v0.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=6,7 "Built target benchmark_gemm_v0"
@@ -173,7 +212,7 @@ CMakeFiles/benchmark_gemm_v0.dir/all: CMakeFiles/atlas_memory.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/benchmark_gemm_v0.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/benchmark_gemm_v0.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
 .PHONY : CMakeFiles/benchmark_gemm_v0.dir/rule
@@ -197,8 +236,8 @@ CMakeFiles/benchmark_gemm_v0.dir/clean:
 # Target rules for target CMakeFiles/benchmark_gemm_v1.dir
 
 # All Build rule for target.
-CMakeFiles/benchmark_gemm_v1.dir/all: CMakeFiles/gemm_kernels.dir/all
 CMakeFiles/benchmark_gemm_v1.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/benchmark_gemm_v1.dir/all: CMakeFiles/gemm_kernels.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v1.dir/build.make CMakeFiles/benchmark_gemm_v1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v1.dir/build.make CMakeFiles/benchmark_gemm_v1.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=8,9 "Built target benchmark_gemm_v1"
@@ -206,7 +245,7 @@ CMakeFiles/benchmark_gemm_v1.dir/all: CMakeFiles/atlas_memory.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/benchmark_gemm_v1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/benchmark_gemm_v1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
 .PHONY : CMakeFiles/benchmark_gemm_v1.dir/rule
@@ -230,8 +269,8 @@ CMakeFiles/benchmark_gemm_v1.dir/clean:
 # Target rules for target CMakeFiles/benchmark_gemm_v2.dir
 
 # All Build rule for target.
-CMakeFiles/benchmark_gemm_v2.dir/all: CMakeFiles/gemm_kernels.dir/all
 CMakeFiles/benchmark_gemm_v2.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/benchmark_gemm_v2.dir/all: CMakeFiles/gemm_kernels.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v2.dir/build.make CMakeFiles/benchmark_gemm_v2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v2.dir/build.make CMakeFiles/benchmark_gemm_v2.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=10,11 "Built target benchmark_gemm_v2"
@@ -239,7 +278,7 @@ CMakeFiles/benchmark_gemm_v2.dir/all: CMakeFiles/atlas_memory.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/benchmark_gemm_v2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/benchmark_gemm_v2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
 .PHONY : CMakeFiles/benchmark_gemm_v2.dir/rule
@@ -263,8 +302,8 @@ CMakeFiles/benchmark_gemm_v2.dir/clean:
 # Target rules for target CMakeFiles/benchmark_gemm_v3.dir
 
 # All Build rule for target.
-CMakeFiles/benchmark_gemm_v3.dir/all: CMakeFiles/gemm_kernels.dir/all
 CMakeFiles/benchmark_gemm_v3.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/benchmark_gemm_v3.dir/all: CMakeFiles/gemm_kernels.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v3.dir/build.make CMakeFiles/benchmark_gemm_v3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v3.dir/build.make CMakeFiles/benchmark_gemm_v3.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=12,13 "Built target benchmark_gemm_v3"
@@ -272,7 +311,7 @@ CMakeFiles/benchmark_gemm_v3.dir/all: CMakeFiles/atlas_memory.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/benchmark_gemm_v3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/benchmark_gemm_v3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
 .PHONY : CMakeFiles/benchmark_gemm_v3.dir/rule
@@ -293,19 +332,217 @@ CMakeFiles/benchmark_gemm_v3.dir/clean:
 .PHONY : CMakeFiles/benchmark_gemm_v3.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/benchmark_gemm_v4_4x4.dir
+
+# All Build rule for target.
+CMakeFiles/benchmark_gemm_v4_4x4.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/benchmark_gemm_v4_4x4.dir/all: CMakeFiles/gemm_kernels.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v4_4x4.dir/build.make CMakeFiles/benchmark_gemm_v4_4x4.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v4_4x4.dir/build.make CMakeFiles/benchmark_gemm_v4_4x4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=14,15 "Built target benchmark_gemm_v4_4x4"
+.PHONY : CMakeFiles/benchmark_gemm_v4_4x4.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/benchmark_gemm_v4_4x4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/benchmark_gemm_v4_4x4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
+.PHONY : CMakeFiles/benchmark_gemm_v4_4x4.dir/rule
+
+# Convenience name for target.
+benchmark_gemm_v4_4x4: CMakeFiles/benchmark_gemm_v4_4x4.dir/rule
+.PHONY : benchmark_gemm_v4_4x4
+
+# codegen rule for target.
+CMakeFiles/benchmark_gemm_v4_4x4.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v4_4x4.dir/build.make CMakeFiles/benchmark_gemm_v4_4x4.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=14,15 "Finished codegen for target benchmark_gemm_v4_4x4"
+.PHONY : CMakeFiles/benchmark_gemm_v4_4x4.dir/codegen
+
+# clean rule for target.
+CMakeFiles/benchmark_gemm_v4_4x4.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v4_4x4.dir/build.make CMakeFiles/benchmark_gemm_v4_4x4.dir/clean
+.PHONY : CMakeFiles/benchmark_gemm_v4_4x4.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/benchmark_gemm_v4_8x8.dir
+
+# All Build rule for target.
+CMakeFiles/benchmark_gemm_v4_8x8.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/benchmark_gemm_v4_8x8.dir/all: CMakeFiles/gemm_kernels.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v4_8x8.dir/build.make CMakeFiles/benchmark_gemm_v4_8x8.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v4_8x8.dir/build.make CMakeFiles/benchmark_gemm_v4_8x8.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=16,17 "Built target benchmark_gemm_v4_8x8"
+.PHONY : CMakeFiles/benchmark_gemm_v4_8x8.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/benchmark_gemm_v4_8x8.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/benchmark_gemm_v4_8x8.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
+.PHONY : CMakeFiles/benchmark_gemm_v4_8x8.dir/rule
+
+# Convenience name for target.
+benchmark_gemm_v4_8x8: CMakeFiles/benchmark_gemm_v4_8x8.dir/rule
+.PHONY : benchmark_gemm_v4_8x8
+
+# codegen rule for target.
+CMakeFiles/benchmark_gemm_v4_8x8.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v4_8x8.dir/build.make CMakeFiles/benchmark_gemm_v4_8x8.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=16,17 "Finished codegen for target benchmark_gemm_v4_8x8"
+.PHONY : CMakeFiles/benchmark_gemm_v4_8x8.dir/codegen
+
+# clean rule for target.
+CMakeFiles/benchmark_gemm_v4_8x8.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v4_8x8.dir/build.make CMakeFiles/benchmark_gemm_v4_8x8.dir/clean
+.PHONY : CMakeFiles/benchmark_gemm_v4_8x8.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/benchmark_gemm_v5.dir
+
+# All Build rule for target.
+CMakeFiles/benchmark_gemm_v5.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/benchmark_gemm_v5.dir/all: CMakeFiles/gemm_kernels.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v5.dir/build.make CMakeFiles/benchmark_gemm_v5.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v5.dir/build.make CMakeFiles/benchmark_gemm_v5.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=18,19 "Built target benchmark_gemm_v5"
+.PHONY : CMakeFiles/benchmark_gemm_v5.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/benchmark_gemm_v5.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/benchmark_gemm_v5.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
+.PHONY : CMakeFiles/benchmark_gemm_v5.dir/rule
+
+# Convenience name for target.
+benchmark_gemm_v5: CMakeFiles/benchmark_gemm_v5.dir/rule
+.PHONY : benchmark_gemm_v5
+
+# codegen rule for target.
+CMakeFiles/benchmark_gemm_v5.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v5.dir/build.make CMakeFiles/benchmark_gemm_v5.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=18,19 "Finished codegen for target benchmark_gemm_v5"
+.PHONY : CMakeFiles/benchmark_gemm_v5.dir/codegen
+
+# clean rule for target.
+CMakeFiles/benchmark_gemm_v5.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v5.dir/build.make CMakeFiles/benchmark_gemm_v5.dir/clean
+.PHONY : CMakeFiles/benchmark_gemm_v5.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/benchmark_gemm_v6.dir
+
+# All Build rule for target.
+CMakeFiles/benchmark_gemm_v6.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/benchmark_gemm_v6.dir/all: CMakeFiles/gemm_kernels.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v6.dir/build.make CMakeFiles/benchmark_gemm_v6.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v6.dir/build.make CMakeFiles/benchmark_gemm_v6.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=20,21 "Built target benchmark_gemm_v6"
+.PHONY : CMakeFiles/benchmark_gemm_v6.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/benchmark_gemm_v6.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/benchmark_gemm_v6.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
+.PHONY : CMakeFiles/benchmark_gemm_v6.dir/rule
+
+# Convenience name for target.
+benchmark_gemm_v6: CMakeFiles/benchmark_gemm_v6.dir/rule
+.PHONY : benchmark_gemm_v6
+
+# codegen rule for target.
+CMakeFiles/benchmark_gemm_v6.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v6.dir/build.make CMakeFiles/benchmark_gemm_v6.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=20,21 "Finished codegen for target benchmark_gemm_v6"
+.PHONY : CMakeFiles/benchmark_gemm_v6.dir/codegen
+
+# clean rule for target.
+CMakeFiles/benchmark_gemm_v6.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_gemm_v6.dir/build.make CMakeFiles/benchmark_gemm_v6.dir/clean
+.PHONY : CMakeFiles/benchmark_gemm_v6.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/benchmark_naive_vs_packed.dir
+
+# All Build rule for target.
+CMakeFiles/benchmark_naive_vs_packed.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/benchmark_naive_vs_packed.dir/all: CMakeFiles/gemm_kernels.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_naive_vs_packed.dir/build.make CMakeFiles/benchmark_naive_vs_packed.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_naive_vs_packed.dir/build.make CMakeFiles/benchmark_naive_vs_packed.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=22,23 "Built target benchmark_naive_vs_packed"
+.PHONY : CMakeFiles/benchmark_naive_vs_packed.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/benchmark_naive_vs_packed.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/benchmark_naive_vs_packed.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
+.PHONY : CMakeFiles/benchmark_naive_vs_packed.dir/rule
+
+# Convenience name for target.
+benchmark_naive_vs_packed: CMakeFiles/benchmark_naive_vs_packed.dir/rule
+.PHONY : benchmark_naive_vs_packed
+
+# codegen rule for target.
+CMakeFiles/benchmark_naive_vs_packed.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_naive_vs_packed.dir/build.make CMakeFiles/benchmark_naive_vs_packed.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=22,23 "Finished codegen for target benchmark_naive_vs_packed"
+.PHONY : CMakeFiles/benchmark_naive_vs_packed.dir/codegen
+
+# clean rule for target.
+CMakeFiles/benchmark_naive_vs_packed.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/benchmark_naive_vs_packed.dir/build.make CMakeFiles/benchmark_naive_vs_packed.dir/clean
+.PHONY : CMakeFiles/benchmark_naive_vs_packed.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_basic_blocked_gemm.dir
+
+# All Build rule for target.
+CMakeFiles/test_basic_blocked_gemm.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/test_basic_blocked_gemm.dir/all: CMakeFiles/gemm_kernels.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_basic_blocked_gemm.dir/build.make CMakeFiles/test_basic_blocked_gemm.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_basic_blocked_gemm.dir/build.make CMakeFiles/test_basic_blocked_gemm.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=33,34 "Built target test_basic_blocked_gemm"
+.PHONY : CMakeFiles/test_basic_blocked_gemm.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_basic_blocked_gemm.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_basic_blocked_gemm.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_basic_blocked_gemm.dir/rule
+
+# Convenience name for target.
+test_basic_blocked_gemm: CMakeFiles/test_basic_blocked_gemm.dir/rule
+.PHONY : test_basic_blocked_gemm
+
+# codegen rule for target.
+CMakeFiles/test_basic_blocked_gemm.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_basic_blocked_gemm.dir/build.make CMakeFiles/test_basic_blocked_gemm.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=33,34 "Finished codegen for target test_basic_blocked_gemm"
+.PHONY : CMakeFiles/test_basic_blocked_gemm.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_basic_blocked_gemm.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_basic_blocked_gemm.dir/build.make CMakeFiles/test_basic_blocked_gemm.dir/clean
+.PHONY : CMakeFiles/test_basic_blocked_gemm.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/test_gemm_correctness.dir
 
 # All Build rule for target.
-CMakeFiles/test_gemm_correctness.dir/all: CMakeFiles/gemm_kernels.dir/all
 CMakeFiles/test_gemm_correctness.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/test_gemm_correctness.dir/all: CMakeFiles/gemm_kernels.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gemm_correctness.dir/build.make CMakeFiles/test_gemm_correctness.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gemm_correctness.dir/build.make CMakeFiles/test_gemm_correctness.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=19,20 "Built target test_gemm_correctness"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=35,36 "Built target test_gemm_correctness"
 .PHONY : CMakeFiles/test_gemm_correctness.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_gemm_correctness.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_gemm_correctness.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_gemm_correctness.dir/rule
@@ -317,13 +554,244 @@ test_gemm_correctness: CMakeFiles/test_gemm_correctness.dir/rule
 # codegen rule for target.
 CMakeFiles/test_gemm_correctness.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gemm_correctness.dir/build.make CMakeFiles/test_gemm_correctness.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=19,20 "Finished codegen for target test_gemm_correctness"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=35,36 "Finished codegen for target test_gemm_correctness"
 .PHONY : CMakeFiles/test_gemm_correctness.dir/codegen
 
 # clean rule for target.
 CMakeFiles/test_gemm_correctness.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_gemm_correctness.dir/build.make CMakeFiles/test_gemm_correctness.dir/clean
 .PHONY : CMakeFiles/test_gemm_correctness.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_layout_and_alignment.dir
+
+# All Build rule for target.
+CMakeFiles/test_layout_and_alignment.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/test_layout_and_alignment.dir/all: CMakeFiles/gemm_kernels.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_and_alignment.dir/build.make CMakeFiles/test_layout_and_alignment.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_and_alignment.dir/build.make CMakeFiles/test_layout_and_alignment.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=37,38 "Built target test_layout_and_alignment"
+.PHONY : CMakeFiles/test_layout_and_alignment.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_layout_and_alignment.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_layout_and_alignment.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_layout_and_alignment.dir/rule
+
+# Convenience name for target.
+test_layout_and_alignment: CMakeFiles/test_layout_and_alignment.dir/rule
+.PHONY : test_layout_and_alignment
+
+# codegen rule for target.
+CMakeFiles/test_layout_and_alignment.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_and_alignment.dir/build.make CMakeFiles/test_layout_and_alignment.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=37,38 "Finished codegen for target test_layout_and_alignment"
+.PHONY : CMakeFiles/test_layout_and_alignment.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_layout_and_alignment.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_and_alignment.dir/build.make CMakeFiles/test_layout_and_alignment.dir/clean
+.PHONY : CMakeFiles/test_layout_and_alignment.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_layout_math.dir
+
+# All Build rule for target.
+CMakeFiles/test_layout_math.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/test_layout_math.dir/all: CMakeFiles/gemm_kernels.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_math.dir/build.make CMakeFiles/test_layout_math.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_math.dir/build.make CMakeFiles/test_layout_math.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=39,40 "Built target test_layout_math"
+.PHONY : CMakeFiles/test_layout_math.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_layout_math.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_layout_math.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_layout_math.dir/rule
+
+# Convenience name for target.
+test_layout_math: CMakeFiles/test_layout_math.dir/rule
+.PHONY : test_layout_math
+
+# codegen rule for target.
+CMakeFiles/test_layout_math.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_math.dir/build.make CMakeFiles/test_layout_math.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=39,40 "Finished codegen for target test_layout_math"
+.PHONY : CMakeFiles/test_layout_math.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_layout_math.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_layout_math.dir/build.make CMakeFiles/test_layout_math.dir/clean
+.PHONY : CMakeFiles/test_layout_math.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_multiple_block_configs.dir
+
+# All Build rule for target.
+CMakeFiles/test_multiple_block_configs.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/test_multiple_block_configs.dir/all: CMakeFiles/gemm_kernels.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_multiple_block_configs.dir/build.make CMakeFiles/test_multiple_block_configs.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_multiple_block_configs.dir/build.make CMakeFiles/test_multiple_block_configs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=41,42 "Built target test_multiple_block_configs"
+.PHONY : CMakeFiles/test_multiple_block_configs.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_multiple_block_configs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_multiple_block_configs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_multiple_block_configs.dir/rule
+
+# Convenience name for target.
+test_multiple_block_configs: CMakeFiles/test_multiple_block_configs.dir/rule
+.PHONY : test_multiple_block_configs
+
+# codegen rule for target.
+CMakeFiles/test_multiple_block_configs.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_multiple_block_configs.dir/build.make CMakeFiles/test_multiple_block_configs.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=41,42 "Finished codegen for target test_multiple_block_configs"
+.PHONY : CMakeFiles/test_multiple_block_configs.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_multiple_block_configs.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_multiple_block_configs.dir/build.make CMakeFiles/test_multiple_block_configs.dir/clean
+.PHONY : CMakeFiles/test_multiple_block_configs.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_packing_correctness.dir
+
+# All Build rule for target.
+CMakeFiles/test_packing_correctness.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/test_packing_correctness.dir/all: CMakeFiles/gemm_kernels.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_packing_correctness.dir/build.make CMakeFiles/test_packing_correctness.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_packing_correctness.dir/build.make CMakeFiles/test_packing_correctness.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=43,44 "Built target test_packing_correctness"
+.PHONY : CMakeFiles/test_packing_correctness.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_packing_correctness.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_packing_correctness.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_packing_correctness.dir/rule
+
+# Convenience name for target.
+test_packing_correctness: CMakeFiles/test_packing_correctness.dir/rule
+.PHONY : test_packing_correctness
+
+# codegen rule for target.
+CMakeFiles/test_packing_correctness.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_packing_correctness.dir/build.make CMakeFiles/test_packing_correctness.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=43,44 "Finished codegen for target test_packing_correctness"
+.PHONY : CMakeFiles/test_packing_correctness.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_packing_correctness.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_packing_correctness.dir/build.make CMakeFiles/test_packing_correctness.dir/clean
+.PHONY : CMakeFiles/test_packing_correctness.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_reset_behavior.dir
+
+# All Build rule for target.
+CMakeFiles/test_reset_behavior.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/test_reset_behavior.dir/all: CMakeFiles/gemm_kernels.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_reset_behavior.dir/build.make CMakeFiles/test_reset_behavior.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_reset_behavior.dir/build.make CMakeFiles/test_reset_behavior.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=45,46 "Built target test_reset_behavior"
+.PHONY : CMakeFiles/test_reset_behavior.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_reset_behavior.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_reset_behavior.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_reset_behavior.dir/rule
+
+# Convenience name for target.
+test_reset_behavior: CMakeFiles/test_reset_behavior.dir/rule
+.PHONY : test_reset_behavior
+
+# codegen rule for target.
+CMakeFiles/test_reset_behavior.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_reset_behavior.dir/build.make CMakeFiles/test_reset_behavior.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=45,46 "Finished codegen for target test_reset_behavior"
+.PHONY : CMakeFiles/test_reset_behavior.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_reset_behavior.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_reset_behavior.dir/build.make CMakeFiles/test_reset_behavior.dir/clean
+.PHONY : CMakeFiles/test_reset_behavior.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_stress_allocation.dir
+
+# All Build rule for target.
+CMakeFiles/test_stress_allocation.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/test_stress_allocation.dir/all: CMakeFiles/gemm_kernels.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stress_allocation.dir/build.make CMakeFiles/test_stress_allocation.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stress_allocation.dir/build.make CMakeFiles/test_stress_allocation.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=47,48 "Built target test_stress_allocation"
+.PHONY : CMakeFiles/test_stress_allocation.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_stress_allocation.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_stress_allocation.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_stress_allocation.dir/rule
+
+# Convenience name for target.
+test_stress_allocation: CMakeFiles/test_stress_allocation.dir/rule
+.PHONY : test_stress_allocation
+
+# codegen rule for target.
+CMakeFiles/test_stress_allocation.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stress_allocation.dir/build.make CMakeFiles/test_stress_allocation.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=47,48 "Finished codegen for target test_stress_allocation"
+.PHONY : CMakeFiles/test_stress_allocation.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_stress_allocation.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stress_allocation.dir/build.make CMakeFiles/test_stress_allocation.dir/clean
+.PHONY : CMakeFiles/test_stress_allocation.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_vs_blas.dir
+
+# All Build rule for target.
+CMakeFiles/test_vs_blas.dir/all: CMakeFiles/atlas_memory.dir/all
+CMakeFiles/test_vs_blas.dir/all: CMakeFiles/gemm_kernels.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_vs_blas.dir/build.make CMakeFiles/test_vs_blas.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_vs_blas.dir/build.make CMakeFiles/test_vs_blas.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=49,50 "Built target test_vs_blas"
+.PHONY : CMakeFiles/test_vs_blas.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_vs_blas.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 16
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_vs_blas.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_vs_blas.dir/rule
+
+# Convenience name for target.
+test_vs_blas: CMakeFiles/test_vs_blas.dir/rule
+.PHONY : test_vs_blas
+
+# codegen rule for target.
+CMakeFiles/test_vs_blas.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_vs_blas.dir/build.make CMakeFiles/test_vs_blas.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shamit/Documents/code/hpc/atlas/build/CMakeFiles --progress-num=49,50 "Finished codegen for target test_vs_blas"
+.PHONY : CMakeFiles/test_vs_blas.dir/codegen
+
+# clean rule for target.
+CMakeFiles/test_vs_blas.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_vs_blas.dir/build.make CMakeFiles/test_vs_blas.dir/clean
+.PHONY : CMakeFiles/test_vs_blas.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

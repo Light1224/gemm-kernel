@@ -1,6 +1,18 @@
-benchmark_gemm_v0 1 7.01219
-benchmark_gemm_v1 1 0.864805
-benchmark_gemm_v2 1 0.924457
-benchmark_gemm_v3 1 1.45357
-test_gemm_correctness 1 0.035043
+benchmark_gemm_v0 3 1.70028
+benchmark_gemm_v1 3 0.117966
+benchmark_gemm_v2 3 0.149612
+benchmark_gemm_v3 3 0.285907
+benchmark_gemm_v4_4x4 3 0.118831
+benchmark_gemm_v4_8x8 3 0.0468061
+benchmark_gemm_v5 3 0.0459118
+benchmark_naive_vs_packed 3 2.52047
+test_basic_blocked_gemm 3 0.00255711
+test_gemm_correctness 3 0.0105725
+test_layout_and_alignment 3 0.00204047
+test_layout_math 3 0.00179746
+test_multiple_block_configs 3 0.00171031
+test_packing_correctness 3 0.00172379
+test_reset_behavior 3 0.00177253
+test_stress_allocation 3 0.00233503
+benchmark_gemm_v6 2 0.0290762
 ---
